@@ -1042,11 +1042,21 @@ footer {
 
 
 
+/* =========================================
+   LINKS HEADER
+========================================= */
+
 .links-header {
-    display: grid;
-    grid-template-columns: 40px 1fr auto;
+    position: relative;
+
+    width: 100%;
+
+    min-height: 58px;
+
+    display: flex;
     align-items: center;
-    gap: 15px;
+
+    justify-content: space-between;
 
     padding-bottom: 22px;
 
@@ -1058,21 +1068,51 @@ footer {
     );
 }
 
-.links-header .gce-logo {
-    width: 105px;
-    justify-self: center;
+
+/* =========================================
+   BACK BUTTON
+========================================= */
+
+.links-header .back-button {
+    flex-shrink: 0;
 }
 
+
+/* =========================================
+   CENTER LOGO
+========================================= */
+
+.links-header .gce-logo {
+    position: absolute;
+
+    left: 50%;
+    top: 0;
+
+    transform: translateX(-50%);
+
+    width: 105px;
+
+    height: auto;
+}
+
+
+/* =========================================
+   GUEST NAME
+========================================= */
+
 .links-header p {
+    margin-left: auto;
+
     font-size: 8px;
+
     letter-spacing: 0.12em;
+
     color: rgba(
         242,
         244,
         247,
         0.5
     );
-}
-.modern-link:hover .link-icon {
-  transform: translate(3px, -3px);
+
+    white-space: nowrap;
 }
