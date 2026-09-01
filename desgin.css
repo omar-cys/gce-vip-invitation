@@ -1040,6 +1040,39 @@ footer {
   transition: 0.25s ease;
 }
 
+
+
+.links-header {
+    display: grid;
+    grid-template-columns: 40px 1fr auto;
+    align-items: center;
+    gap: 15px;
+
+    padding-bottom: 22px;
+
+    border-bottom: 1px solid rgba(
+        242,
+        244,
+        247,
+        0.12
+    );
+}
+
+.links-header .gce-logo {
+    width: 105px;
+    justify-self: center;
+}
+
+.links-header p {
+    font-size: 8px;
+    letter-spacing: 0.12em;
+    color: rgba(
+        242,
+        244,
+        247,
+        0.5
+    );
+}
 .modern-link:hover .link-icon {
   transform: translate(3px, -3px);
 }
